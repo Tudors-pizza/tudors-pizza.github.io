@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tudors Pizza Split - Authentic Italian pizza worthy of kings. Find Tudors Pizza in Split and get directions fast.">
+    <meta name="keywords" content="Tudors Pizza Split, pizza Split, pizzeria Split, directions Tudors Pizza, Spinciceva 7 Split">
+    <title>Tudors Pizza | Taste of Royalty</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5QC62X5M');</script>
+    <!-- End Google Tag Manager -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLCHY1H49H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SLCHY1H49H');
+    </script>
+    <style>
+        :root {
+            --dark: #121212;
+            --dark-soft: #1a1a1a;
+            --gold: #d4af37;
+            --gold-soft: rgba(212, 175, 55, 0.15);
+            --red: #e63946;
+            --white: #ffffff;
+            --gray: #1f1f1f;
+            --muted: #c8c8c8;
+            --border: rgba(212, 175, 55, 0.2);
+            --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--dark);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 3.5%;
+            background: rgba(18, 18, 18, 0.94);
+            backdrop-filter: blur(14px);
+            position: fixed;
+            inset: 0 0 auto 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .brand img {
+            width: 135px;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.92rem;
+            letter-spacing: 0.03em;
+            padding: 8px 12px;
+            border-radius: 999px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--gold);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-1px);
+        }
+
+        .language-selector {
+            position: relative;
+        }
+
+        .translate-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .translate-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--dark-soft);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 0;
+            min-width: 120px;
+            z-index: 1001;
+        }
+
+        .language-dropdown a {
+            display: block;
+            padding: 8px 16px;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .language-dropdown a:hover {
+            background: var(--gold-soft);
+            color: var(--gold);
+        }
+
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.72)),
+                url('For site/cover.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 20px 90px;
+        }
+
+        .hero-inner {
+            max-width: 760px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.9rem, 8vw, 5rem);
+            line-height: 1.05;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.6vw, 1.2rem);
+            max-width: 640px;
+            margin: 0 auto 2rem;
+            font-weight: 300;
+            color: #efefef;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn,
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 999px;
+            transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: var(--red);
+            color: var(--white);
+        }
+
+        .btn:hover,
+        .btn:focus-visible {
+            transform: translateY(-2px);
+            background-color: #c42f3b;
+        }
+
+        .btn-secondary {
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:focus-visible {
+            transform: translateY(-2px);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        section {
+            scroll-margin-top: 110px;
+        }
+
+        .about,
+        .gallery,
+        .reviews,
+        .location,
+        .drinks {
+            padding: 88px 5%;
+        }
+
+        .about {
+            background: var(--gray);
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: minmax(320px, 0.95fr) minmax(320px, 1.05fr);
+            gap: 50px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: minmax(320px, 0.92fr) minmax(380px, 1.08fr);
+            gap: 40px;
+            align-items: stretch;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-image img,
+        .map,
+        .travel-links,
+        .status-card {
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 680px;
+            object-fit: cover;
+            object-position: center top;
+            background: #111;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.1rem, 4vw, 2.8rem);
+            color: var(--gold);
+            margin-bottom: 22px;
+        }
+
+        .about-content h3,
+        .location-info h3,
+        .drinks-content h3 {
+            color: var(--gold);
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .about-content p,
+        .location-info p,
+        .travel-links p,
+        .status-card p,
+        .drinks-content p {
+            color: var(--muted);
+        }
+
+        .about-content p + p,
+        .location-info > div + div {
+            margin-top: 16px;
+        }
+
+        .gallery {
+            background: var(--dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 14px;
+            height: 250px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .reviews {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),
+                url('For site/Pizzeria.JPEG');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .reviews-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+
+        .review-card {
+            background: rgba(31, 31, 31, 0.92);
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 1.45rem;
+            margin-bottom: 14px;
+            letter-spacing: 0.06em;
+        }
+
+        .review-card p {
+            font-style: italic;
+            margin-bottom: 18px;
+            color: #ddd;
+        }
+
+        .reviewer strong {
+            color: var(--gold);
+            display: block;
+        }
+
+        .reviewer span,
+        .rating-text {
+            font-size: 0.92rem;
+            color: #aaa;
+        }
+
+        .google-rating {
+            text-align: center;
+        }
+
+        .rating-score {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .location {
+            background: var(--gray);
+        }
+
+        .location-container {
+            align-items: stretch;
+            grid-template-columns: minmax(320px, 0.92fr) minmax(380px, 1.08fr);
+        }
+
+        .location-copy {
+            display: grid;
+            gap: 22px;
+            align-content: start;
+        }
+
+        .status-card,
+        .travel-links {
+            background: var(--dark-soft);
+            border: 1px solid var(--border);
+            padding: 22px;
+        }
+
+        .status-card strong,
+        .location-info strong,
+        .travel-links strong {
+            color: var(--white);
+        }
+
+        .travel-links h4 {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .travel-options {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .travel-options a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 54px;
+            padding: 12px 16px;
+            text-align: center;
+            text-decoration: none;
+            background: var(--gold-soft);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            color: var(--white);
+            border-radius: 14px;
+            font-weight: 700;
+            transition: transform 0.3s, border-color 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        .travel-options a:hover,
+        .travel-options a:focus-visible {
+            transform: translateY(-2px);
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(212, 175, 55, 0.08);
+        }
+
+        .map {
+            overflow: hidden;
+            min-height: 100%;
+            align-self: stretch;
+        }
+
+        .map iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 520px;
+            border: 0;
+        }
+
+        /* Drinks Section */
+        .drinks {
+            background: linear-gradient(180deg, #2e2e2e 0%, #1f1f1f 25%, #2f2f2f 50%, #1c1c1c 75%, #2a2a2a 100%);
+        }
+
+        .drinks-container {
+            display: grid;
+            grid-template-columns: minmax(320px, 1.05fr) minmax(320px, 0.95fr);
+            gap: 50px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reservations {
+            background: #111;
+            padding: 88px 5%;
+        }
+
+        .reservations-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(320px, 0.95fr) minmax(320px, 1.05fr);
+            gap: 40px;
+            align-items: center;
+        }
+
+        .reservations-image img {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            background: #111;
+        }
+
+        .reservations-copy {
+            background: var(--dark-soft);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 28px;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        .reservations-copy p {
+            margin-bottom: 18px;
+        }
+
+        .drinks-content h3 {
+            margin-top: 0;
+        }
+
+        .drinks-content p {
+            margin-bottom: 16px;
+        }
+
+        .drinks-image {
+            position: relative;
+        }
+
+        .drinks-image img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            object-position: center right;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        footer {
+            padding: 34px 20px;
+            text-align: center;
+            background: #0a0a0a;
+            border-top: 1px solid #222;
+        }
+
+        footer p + p {
+            margin-top: 8px;
+        }
+
+        @media (max-width: 1024px) {
+            .about-container,
+            .location-container,
+            .reviews-container,
+            .gallery-grid,
+            .drinks-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 14px;
+            }
+
+            .brand {
+                justify-content: center;
+            }
+
+            .brand img {
+                width: 120px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 6px;
+                margin-top: 10px;
+            }
+
+            .nav-links a {
+                font-size: 0.82rem;
+                padding: 8px 10px;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 14px;
+                position: relative;
+            }
+
+            .language-selector {
+                position: absolute;
+                top: 10px;
+                right: 14px;
+                width: auto;
+                margin-top: 0;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .translate-btn {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.08);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px;
+            }
+
+            .language-dropdown {
+                right: 0;
+                left: auto;
+                transform: none;
+                min-width: 150px;
+            }
+
+            .hero {
+                padding-top: 170px;
+            }
+
+            .about,
+            .gallery,
+            .reviews,
+            .location,
+            .drinks,
+            .reservations {
+                padding: 72px 18px;
+            }
+
+            .about-container,
+            .location-container,
+            .reviews-container,
+            .gallery-grid,
+            .travel-options,
+            .drinks-container,
+            .reservations-container {
+                grid-template-columns: 1fr;
+            }
+
+            .drinks-image {
+                order: -1;
+            }
+
+            .drinks-image img {
+                height: 400px;
+            }
+
+            .map iframe {
+                min-height: 340px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .btn,
+            .btn-secondary {
+                width: 100%;
+            }
+
+            .review-card,
+            .status-card,
+            .travel-links {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QC62X5M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav>
+        <a class="brand" href="#top" aria-label="Back to top">
+            <img src="For site/tudors_logo.png" alt="Tudors Pizza logo">
+        </a>
+        <div class="nav-links">
+            <a href="#top">Home</a>
+            <a href="https://app.infiora.hr/69d17b827042715fee4976a0" target="_blank" rel="noreferrer">Menu</a>
+            <a href="#reservations">Reservations</a>
+            <a href="#location">Location</a>
+        </div>        <div class="language-selector">
+            <button class="translate-btn" id="translateBtn">
+                <img src="For site/translate.png" alt="Translate">
+            </button>
+            <div class="language-dropdown" id="languageDropdown">
+                <a href="#" data-lang="hr">Hrvatski</a>
+                <a href="#" data-lang="de">Deutsch</a>
+                <a href="#" data-lang="it">Italiano</a>
+                <a href="#" data-lang="es">Español</a>
+                <a href="#" data-lang="fr">Français</a>
+            </div>
+        </div>    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Pizza & Pasta Worthy of Kings.</h1>
+            <p>Hand-crafted dough, fresh ingredients, and a warm Split atmosphere that makes every stop at Tudors feel like the right one.</p>
+                        <div class="hero-actions">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Spinciceva+7,+Split,+Croatia&travelmode=driving" class="btn" target="_blank" rel="noreferrer">Lead Me to Tudors</a>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="For site/Pizzaiolo.png" alt="Pizzaiolo preparing pizza at Tudors">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Pizza Pasta Tudors</h2>
+                <h3>Tradition and Passion in Every Bite</h3>
+                <p>
+                    <strong>Pizza & Pasta Tudors</strong>, located in the vibrant Firule area of Split, brings you an authentic Italian dining experience with a Croatian signature. Our restaurant in Split takes pride in preparing both premium pizza and delicious pasta according to traditional recipes, using only the freshest ingredients and high-quality flour.
+                </p>
+                <p>
+                    Our skilled <strong>pizzaiolos</strong> carefully hand-stretch the dough and bake every pizza at high temperatures of <strong>420°C</strong> for a perfect golden crunch, while our pasta chefs prepare rich, flavorful dishes daily using classic Italian techniques. Whether you're craving a classic Italian pizza or a rich, creamy fettuccine, Tudors is your choice for the <strong>best Italian food in Split</strong>.
+                </p>
+                <p>
+                    House specialties include <strong>Tudor's Special Pizza</strong> with aromatic truffles and Dalmatian prosciutto, and our famous creamy pasta with Mediterranean herbs and premium toppings. Visit us and discover why we're the favorite pizzeria and pasta restaurant in Split among food lovers!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2 class="section-title" style="text-align: center;">Our Ambience</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="For site/delicious.jpg" alt="Fresh pizza and ingredients at Tudors">
+            </div>
+            <div class="gallery-item">
+                <img src="For site/slice_it_up.JPEG" alt="Pizza slice served at Tudors">
+            </div>
+            <div class="gallery-item">
+                <img src="For site/double.JPEG" alt="Tudors pizza and drinks setting">
+            </div>
+            <div class="gallery-item">
+                <img src="For site/Pizza_Cocktails.jpg" alt="Cocktails and pizza pairing at Tudors">
+            </div>
+            <div class="gallery-item">
+                <img src="For site/cocktail.JPEG" alt="Cocktail presentation at Tudors">
+            </div>
+            <div class="gallery-item">
+                <img src="For site/tiramisu.webp" alt="Tudors dessert selection">
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="drinks" id="drinks">
+        <div class="drinks-container">
+            <div class="drinks-content">
+                <h2 class="section-title">Wines, Cocktails & Rakija</h2>
+                <h3>Crafted Drinks for Every Taste</h3>
+                <p>
+                    At <strong>Pizza & Pasta Tudors</strong>, we believe that exceptional food deserves exceptional drinks. Our carefully curated selection features premium <strong>Croatian wines</strong> from renowned Dalmatian vineyards, including robust reds like Plavac Mali and crisp whites like Pošip and Grk that perfectly complement our Italian specialties.
+                </p>
+                <p>
+                    Our bartenders serve a <strong>curated selection of cocktails</strong> and premium drinks, perfectly crafted to complement your meal. From a refreshing <strong>Aperol Spritz</strong> to a wide range of top-shelf spirits, every drink is prepared with care and served with a Mediterranean flair.
+                </p>
+                <p>
+                    For those who appreciate traditional spirits, we offer an excellent selection of <strong>Croatian rakija</strong> (brandy) – from aromatic loza (grape brandy) to medicinal travarica (herb rakija) and sweet pelinkovac. Whether you prefer it as an aperitif or digestif, our rakija selection showcases the best of Croatian distilling tradition.
+                </p>
+                <p>
+                    Let our staff guide you to the perfect pairing – whether it's a glass of wine with your pizza, a refreshing cocktail on our terrace, or a shot of rakija to complete your dining experience.
+                </p>
+            </div>
+            <div class="drinks-image">
+                <img src="For site/Tequila sunrise.JPEG" alt="Tequila Sunrise cocktail at Tudors">
+            </div>
+        </div>
+    </section>
+
+    <section class="reservations" id="reservations">
+        <div class="reservations-container">
+            <div class="reservations-image">
+                <img src="For site/sorry.jpg" alt="Sorry sign for reservations">
+            </div>
+            <div>
+                <h2 class="section-title">Reservations During Peak Season</h2>
+                <div class="reservations-copy">
+                    <p>Due to high demand during the peak season, we currently do not accept new reservations. However, all previously made bookings will be honored.</p>
+                    <p>Most guests stay around 45 minutes, and we have plenty of tables available to welcome walk-in visitors. Because of this, you usually won’t have to wait long to be seated.</p>
+                    <p>Come early and enjoy the full dine-in experience at Pizza Pasta Tudors in Split, where great food and warm hospitality meet!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews-shell">
+            <h2 class="section-title" style="text-align: center;">What Our Guests Say</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The best pizza in Split. The crust is perfectly crispy and the ingredients are fresh. Tudor's Special is an absolute hit."</p>
+                    <div class="reviewer">
+                        <strong>Marko P.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excellent service, delicious pizza, and a great atmosphere. We will definitely be back. Highly recommended."</p>
+                    <div class="reviewer">
+                        <strong>Ana K.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Finally, a place in Split that really nails the full pizza experience. Fast, flavorful, and always worth the trip."</p>
+                    <div class="reviewer">
+                        <strong>Ivan M.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div class="google-rating">
+                <span class="rating-score">4.9</span>
+                <span class="rating-text">based on 700+ Google reviews</span>
+            </div>
+        </div>
+    </section>
+
+        <section class="location" id="location">
+        <div class="location-container">
+            <div class="location-copy">
+                <div class="location-info">
+                    <h2 class="section-title">Find Tudors Fast</h2>
+                    <h3>Tudors Pizza Pasta</h3>
+                    <div class="address">
+                        <p><strong>Address:</strong><br>Spinciceva 7<br>21000Split, Croatia</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <p><strong>Opening Hours:</strong></p>
+                    <p>We are currently closed.</p>
+                </div>
+
+                <div class="travel-links">
+                    <h4>Choose Your Route</h4>
+                    <p>Tap the way you want to travel and Google Maps will open directions to Tudors from your current location.</p>
+                    <div class="travel-options">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Spinciceva+7,+Split,+Croatia&travelmode=driving" target="_blank" rel="noreferrer">🚗 By Car</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Spinciceva+7,+Split,+Croatia&travelmode=transit" target="_blank" rel="noreferrer">🚌 By Bus</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Spinciceva+7,+Split,+Croatia&travelmode=walking" target="_blank" rel="noreferrer">🚶 On Foot</a>
+                    </div>
+                </div>
+</div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps?q=Spinciceva+7,+Split,+Croatia&z=16&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Tudors Pizza Split Location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tudors Pizza. All rights reserved.</p>
+        <p>Spinciceva 7,21000 Split, Croatia</p>
+    </footer>
+
+    <script>
+        // Translations object
+        const translations = {
+            en: {
+                nav: {
+                    home: "Home",
+                    menu: "Menu",
+                    reservations: "Reservations",
+                    location: "Location"
+                },
+                hero: {
+                    title: "Pizza & Pasta Worthy of Kings.",
+                    subtitle: "Hand-crafted dough, fresh ingredients, and a warm Split atmosphere that makes every stop at Tudors feel like the right one."
+                },
+                about: {
+                    title: "About Pizza Pasta Tudors",
+                    subtitle: "Tradition and Passion in Every Bite",
+                    p1: "<strong>Pizza & Pasta Tudors</strong>, located in the vibrant Firule area of Split, brings you an authentic Italian dining experience with a Croatian signature. Our restaurant in Split takes pride in preparing both premium pizza and delicious pasta according to traditional recipes, using only the freshest ingredients and high-quality flour.",
+                    p2: "Our skilled <strong>pizzaiolos</strong> carefully hand-stretch the dough and bake every pizza at high temperatures of <strong>420°C</strong> for a perfect golden crunch, while our pasta chefs prepare rich, flavorful dishes daily using classic Italian techniques. Whether you're craving a classic Italian pizza or a rich, creamy fettuccine, Tudors is your choice for the <strong>best Italian food in Split</strong>.",
+                    p3: "House specialties include <strong>Tudor's Special Pizza</strong> with aromatic truffles and Dalmatian prosciutto, and our famous creamy pasta with Mediterranean herbs and premium toppings. Visit us and discover why we're the favorite pizzeria and pasta restaurant in Split among food lovers!"
+                },
+                gallery: {
+                    title: "Our Ambience"
+                },
+                drinks: {
+                    title: "Wines, Cocktails & Rakija",
+                    subtitle: "Crafted Drinks for Every Taste",
+                    p1: "At <strong>Pizza & Pasta Tudors</strong>, we believe that exceptional food deserves exceptional drinks. Our carefully curated selection features premium <strong>Croatian wines</strong> from renowned Dalmatian vineyards, including robust reds like Plavac Mali and crisp whites like Pošip and Grk that perfectly complement our Italian specialties.",
+                    p2: "Our bartenders serve a <strong>curated selection of cocktails</strong> and premium drinks, perfectly crafted to complement your meal. From a refreshing <strong>Aperol Spritz</strong> to a wide range of top-shelf spirits, every drink is prepared with care and served with a Mediterranean flair.",
+                    p3: "For those who appreciate traditional spirits, we offer an excellent selection of <strong>Croatian rakija</strong> (brandy) – from aromatic loza (grape brandy) to medicinal travarica (herb rakija) and sweet pelinkovac. Whether you prefer it as an aperitif or digestif, our rakija selection showcases the best of Croatian distilling tradition.",
+                    p4: "Let our staff guide you to the perfect pairing – whether it's a glass of wine with your pizza, a refreshing cocktail on our terrace, or a shot of rakija to complete your dining experience."
+                },
+                reservations: {
+                    title: "Reservations During Peak Season",
+                    p1: "Due to high demand during the peak season, we currently do not accept new reservations. However, all previously made bookings will be honored.",
+                    p2: "Most guests stay around 45 minutes, and we have plenty of tables available to welcome walk-in visitors. Because of this, you usually won't have to wait long to be seated.",
+                    p3: "Come early and enjoy the full dine-in experience at Pizza Pasta Tudors in Split, where great food and warm hospitality meet!"
+                },
+                reviews: {
+                    title: "What Our Guests Say",
+                    review1: "\"The best pizza in Split. The crust is perfectly crispy and the ingredients are fresh. Tudor's Special is an absolute hit.\"",
+                    review2: "\"Excellent service, delicious pizza, and a great atmosphere. We will definitely be back. Highly recommended.\"",
+                    review3: "\"Finally, a place in Split that really nails the full pizza experience. Fast, flavorful, and always worth the trip.\"",
+                    rating: "based on 700+ Google reviews"
+                },
+                location: {
+                    title: "Find Tudors Fast",
+                    subtitle: "Tudors Pizza Pasta",
+                    address: "Address:",
+                    street: "Spinciceva 7",
+                    city: "21000Split, Croatia",
+                    hours: "Opening Hours:",
+                    status: "We are currently closed.",
+                    route: "Choose Your Route",
+                    routeDesc: "Tap the way you want to travel and Google Maps will open directions to Tudors from your current location.",
+                    car: "🚗 By Car",
+                    bus: "🚌 By Bus",
+                    walk: "🚶 On Foot"
+                },
+                footer: {
+                    copyright: "&copy; 2026 Tudors Pizza. All rights reserved.",
+                    address: "Spinciceva 7,21000 Split, Croatia"
+                }
+            },
+            hr: {
+                nav: {
+                    home: "Početna",
+                    menu: "Meni",
+                    reservations: "Rezervacije",
+                    location: "Lokacija"
+                },
+                hero: {
+                    title: "Pizza i Tjestenina Dostojna Kraljeva.",
+                    subtitle: "Ručno izrađeno tijesto, svježi sastojci i topla atmosfera Splita koja svaki posjet Tudorsu čini pravim izborom."
+                },
+                about: {
+                    title: "O Pizza Pasta Tudors",
+                    subtitle: "Tradicija i Strast u Svakom Zalogaju",
+                    p1: "<strong>Pizza & Pasta Tudors</strong>, smješten u živopisnom Firulama u Splitu, donosi vam autentično talijansko iskustvo jedenja s hrvatskim potpisom. Naš restoran u Splitu ponosi se pripremom premium pizze i ukusne tjestenine prema tradicionalnim receptima, koristeći samo najsvježije sastojke i visokokvalitetno brašno.",
+                    p2: "Naši vješti <strong>pizzaioli</strong> pažljivo ručno razvlače tijesto i peku svaku pizzu na visokim temperaturama od <strong>420°C</strong> za savršenu zlatnu hrskavost, dok naši kuhari tjestenine pripremaju bogata, ukusna jela svakodnevno koristeći klasične talijanske tehnike. Bilo da žudite za klasičnom talijanskom pizzom ili bogatom, kremastom fettuccine, Tudors je vaš izbor za <strong>najbolju talijansku hranu u Splitu</strong>.",
+                    p3: "Kućne specijalitete uključuju <strong>Tudor's Special Pizza</strong> s aromatičnim tartufima i dalmatinskim pršutom, te našu slavnu kremastu tjesteninu sa sredozemnim biljem i premium dodacima. Posjetite nas i otkrijte zašto smo omiljena pizzerija i restoran tjestenine u Splitu među ljubiteljima hrane!"
+                },
+                gallery: {
+                    title: "Naša Atmosfera"
+                },
+                drinks: {
+                    title: "Vina, Kokteli i Rakija",
+                    subtitle: "Pripremljena Pića za Svaki Ukusu",
+                    p1: "U <strong>Pizza & Pasta Tudors</strong>, vjerujemo da izvanredna hrana zaslužuje izvanredna pića. Naš pažljivo odabrani izbor uključuje premium <strong>hrvatska vina</strong> iz poznatih dalmatinskih vinograda, uključujući robusna crvena poput Plavca Malog i svježa bijela poput Pošipa i Grka koja savršeno nadopunjuju naše talijanske specijalitete.",
+                    p2: "Naši barmeni poslužuju <strong>odabrani izbor koktela</strong> i premium pića, savršeno pripremljena da nadopune vaš obrok. Od osvježavajućeg <strong>Aperol Spritza</strong> do širokog raspona vrhunskih žestica, svako piće priprema se s pažnjom i poslužuje sa sredozemnim šarmom.",
+                    p3: "Za one koji cijene tradicionalna žestoka pića, nudimo izvrsni izbor <strong>hrvatske rakije</strong> (rakije) – od aromatične loze (grožđane rakije) do ljekovite travarice (biljne rakije) i slatkog pelinkovca. Bilo da je preferirate kao aperitiv ili digestiv, naš izbor rakije prikazuje najbolje hrvatske destilacijske tradicije.",
+                    p4: "Dopustite našem osoblju da vas vodi do savršenog para – bilo da je čaša vina uz vašu pizzu, osvježavajući koktel na našoj terasi, ili čašica rakije da završi vaše iskustvo jedenja."
+                },
+                reservations: {
+                    title: "Rezervacije Tijekom Vrhunca Sezone",
+                    p1: "Zbog velikog interesa tijekom vrhunca sezone, trenutno ne prihvaćamo nove rezervacije. Međutim, sve prethodno napravljene rezervacije bit će poštovane.",
+                    p2: "Većina gostiju ostaje oko 45 minuta, a imamo puno stolova dostupnih za pozdraviti goste bez rezervacije. Zbog toga, obično nećete morati dugo čekati da budete posjednuti.",
+                    p3: "Dođite rano i uživajte u punom iskustvu jedenja u Pizza Pasta Tudors u Splitu, gdje se sjajna hrana i topla gostoljubivost susreću!"
+                },
+                reviews: {
+                    title: "Što Naši Gosti Kažu",
+                    review1: "\"Najbolja pizza u Splitu. Kora je savršeno hrskava, a sastojci svježi. Tudor's Special je apsolutni hit.\"",
+                    review2: "\"Izvrsna usluga, ukusna pizza i sjajna atmosfera. Definitivno ćemo se vratiti. Toplo preporučujemo.\"",
+                    review3: "\"Konačno, mjesto u Splitu koje stvarno savladava puno pizza iskustvo. Brzo, ukusno i uvijek vrijedno puta.\"",
+                    rating: "na temelju 700+ Google recenzija"
+                },
+                location: {
+                    title: "Pronađite Tudors Brzo",
+                    subtitle: "Tudors Pizza Pasta",
+                    address: "Adresa:",
+                    street: "Spinciceva 7",
+                    city: "21000Split, Hrvatska",
+                    hours: "Radno Vrijeme:",
+                    status: "Trenutno smo zatvoreni.",
+                    route: "Odaberite Svoj Put",
+                    routeDesc: "Dodirnite način na koji želite putovati i Google Maps će otvoriti upute do Tudors iz vaše trenutne lokacije.",
+                    car: "🚗 Autom",
+                    bus: "🚌 Autobusom",
+                    walk: "🚶 Pješice"
+                },
+                footer: {
+                    copyright: "&copy; 2026 Tudors Pizza. Sva prava pridržana.",
+                    address: "Spinciceva 7,21000 Split, Hrvatska"
+                }
+            },
+            de: {
+                nav: {
+                    home: "Startseite",
+                    menu: "Speisekarte",
+                    reservations: "Reservierungen",
+                    location: "Standort"
+                },
+                hero: {
+                    title: "Pizza & Pasta Würdig der Könige.",
+                    subtitle: "Handgefertigter Teig, frische Zutaten und eine warme Split-Atmosphäre, die jeden Stopp bei Tudors zum richtigen macht."
+                },
+                about: {
+                    title: "Über Pizza Pasta Tudors",
+                    subtitle: "Tradition und Leidenschaft in Jedem Bissen",
+                    p1: "<strong>Pizza & Pasta Tudors</strong>, gelegen im lebendigen Firule-Bereich von Split, bringt Ihnen ein authentisches italienisches Essenserlebnis mit kroatischer Note. Unser Restaurant in Split ist stolz darauf, sowohl Premium-Pizza als auch köstliche Pasta nach traditionellen Rezepten zuzubereiten, unter Verwendung nur der frischesten Zutaten und hochwertigem Mehl.",
+                    p2: "Unsere geschickten <strong>Pizzaioli</strong> dehnen den Teig sorgfältig von Hand und backen jede Pizza bei hohen Temperaturen von <strong>420°C</strong> für einen perfekten goldenen Knusper, während unsere Pasta-Köche täglich reichhaltige, schmackhafte Gerichte mit klassischen italienischen Techniken zubereiten. Ob Sie sich nach einer klassischen italienischen Pizza oder einer reichhaltigen, cremigen Fettuccine sehnen, Tudors ist Ihre Wahl für das <strong>beste italienische Essen in Split</strong>.",
+                    p3: "Haus-Spezialitäten umfassen <strong>Tudor's Special Pizza</strong> mit aromatischen Trüffeln und dalmatinischem Prosciutto, sowie unsere berühmte cremige Pasta mit mediterranen Kräutern und Premium-Belagen. Besuchen Sie uns und entdecken Sie, warum wir die Lieblings-Pizzeria und Pasta-Restaurant in Split unter Feinschmeckern sind!"
+                },
+                gallery: {
+                    title: "Unsere Atmosphäre"
+                },
+                drinks: {
+                    title: "Weine, Cocktails & Rakija",
+                    subtitle: "Gefertigte Getränke für Jeden Geschmack",
+                    p1: "Bei <strong>Pizza & Pasta Tudors</strong> glauben wir, dass außergewöhnliches Essen außergewöhnliche Getränke verdient. Unsere sorgfältig zusammengestellte Auswahl umfasst Premium-<strong>kroatische Weine</strong> aus renommierten dalmatinischen Weinbergen, einschließlich robuster Rotweine wie Plavac Mali und knackiger Weißweine wie Pošip und Grk, die unsere italienischen Spezialitäten perfekt ergänzen.",
+                    p2: "Unsere Barkeeper servieren eine <strong>sorgfältig zusammengestellte Auswahl an Cocktails</strong> und Premium-Getränken, perfekt zubereitet, um Ihr Essen zu ergänzen. Von einem erfrischenden <strong>Aperol Spritz</strong> bis zu einer breiten Palette erstklassiger Spirituosen wird jedes Getränk mit Sorgfalt zubereitet und mit mediterranem Flair serviert.",
+                    p3: "Für diejenigen, die traditionelle Spirituosen schätzen, bieten wir eine hervorragende Auswahl an <strong>kroatischer Rakija</strong> (Branntwein) – von aromatischem Loza (Trauben-Branntwein) bis zu medizinischem Travarica (Kräuter-Rakija) und süßem Pelinkovac. Ob Sie es als Aperitif oder Digestif bevorzugen, unsere Rakija-Auswahl zeigt das Beste der kroatischen Destilliertradition.",
+                    p4: "Lassen Sie unser Personal Sie zur perfekten Kombination führen – sei es ein Glas Wein zu Ihrer Pizza, ein erfrischender Cocktail auf unserer Terrasse oder ein Schluck Rakija, um Ihr Essenserlebnis zu vervollständigen."
+                },
+                reservations: {
+                    title: "Reservierungen Während der Hochsaison",
+                    p1: "Aufgrund hoher Nachfrage während der Hochsaison nehmen wir derzeit keine neuen Reservierungen an. Alle zuvor getätigten Buchungen werden jedoch eingehalten.",
+                    p2: "Die meisten Gäste bleiben etwa 45 Minuten, und wir haben viele Tische verfügbar, um Laufkundschaft willkommen zu heißen. Deshalb müssen Sie normalerweise nicht lange warten, um platziert zu werden.",
+                    p3: "Kommen Sie früh und genießen Sie das volle Essenserlebnis bei Pizza Pasta Tudors in Split, wo großartiges Essen und herzliche Gastfreundschaft aufeinandertreffen!"
+                },
+                reviews: {
+                    title: "Was Unsere Gäste Sagen",
+                    review1: "\"Die beste Pizza in Split. Der Rand ist perfekt knusprig und die Zutaten frisch. Tudor's Special ist ein absoluter Hit.\"",
+                    review2: "\"Ausgezeichneter Service, köstliche Pizza und eine großartige Atmosphäre. Wir kommen definitiv wieder. Sehr empfohlen.\"",
+                    review3: "\"Endlich ein Ort in Split, der das volle Pizza-Erlebnis wirklich meistert. Schnell, geschmackvoll und immer die Reise wert.\"",
+                    rating: "basierend auf 700+ Google-Bewertungen"
+                },
+                location: {
+                    title: "Tudors Schnell Finden",
+                    subtitle: "Tudors Pizza Pasta",
+                    address: "Adresse:",
+                    street: "Spinciceva 7",
+                    city: "21000Split, Kroatien",
+                    hours: "Öffnungszeiten:",
+                    status: "Wir sind derzeit geschlossen.",
+                    route: "Wählen Sie Ihre Route",
+                    routeDesc: "Tippen Sie auf die gewünschte Reisemethode und Google Maps öffnet Wegbeschreibungen zu Tudors von Ihrem aktuellen Standort.",
+                    car: "🚗 Mit dem Auto",
+                    bus: "🚌 Mit dem Bus",
+                    walk: "🚶 Zu Fuß"
+                },
+                footer: {
+                    copyright: "&copy; 2026 Tudors Pizza. Alle Rechte vorbehalten.",
+                    address: "Spinciceva 7,21000 Split, Kroatien"
+                }
+            },
+            it: {
+                nav: {
+                    home: "Home",
+                    menu: "Menu",
+                    reservations: "Prenotazioni",
+                    location: "Posizione"
+                },
+                hero: {
+                    title: "Pizza e Pasta Degne dei Re.",
+                    subtitle: "Impasto fatto a mano, ingredienti freschi e un'atmosfera calda di Split che rende ogni sosta da Tudors quella giusta."
+                },
+                about: {
+                    title: "Su Pizza Pasta Tudors",
+                    subtitle: "Tradizione e Passione in Ogni Boccone",
+                    p1: "<strong>Pizza & Pasta Tudors</strong>, situato nella vivace area di Firule di Split, vi porta un'esperienza culinaria italiana autentica con una firma croata. Il nostro ristorante a Split è orgoglioso di preparare sia pizza premium che pasta deliziosa secondo ricette tradizionali, utilizzando solo ingredienti freschissimi e farina di alta qualità.",
+                    p2: "I nostri abili <strong>pizzaioli</strong> stendono con cura l'impasto a mano e cuociono ogni pizza ad alte temperature di <strong>420°C</strong> per una croccantezza dorata perfetta, mentre i nostri chef di pasta preparano piatti ricchi e saporiti quotidianamente utilizzando tecniche italiane classiche. Che tu desideri una pizza italiana classica o una fettuccine ricca e cremosa, Tudors è la tua scelta per il <strong>miglior cibo italiano a Split</strong>.",
+                    p3: "Le specialità della casa includono <strong>Pizza Speciale di Tudors</strong> con tartufi aromatici e prosciutto dalmata, e la nostra famosa pasta cremosa con erbe mediterranee e topping premium. Visitaci e scopri perché siamo la pizzeria e il ristorante di pasta preferiti a Split tra gli amanti del cibo!"
+                },
+                gallery: {
+                    title: "La Nostra Atmosfera"
+                },
+                drinks: {
+                    title: "Vini, Cocktail e Rakija",
+                    subtitle: "Bevande Artigianali per Ogni Gusto",
+                    p1: "Da <strong>Pizza & Pasta Tudors</strong>, crediamo che cibo eccezionale meriti bevande eccezionali. La nostra selezione attentamente curata presenta vini premium <strong>croati</strong> da rinomati vigneti dalmati, inclusi rossi robusti come Plavac Mali e bianchi croccanti come Pošip e Grk che completano perfettamente le nostre specialità italiane.",
+                    p2: "I nostri barman servono una <strong>selezione curata di cocktail</strong> e bevande premium, perfettamente preparati per accompagnare il vostro pasto. Da un rinfrescante <strong>Aperol Spritz</strong> a una vasta gamma di superalcolici di prima qualità, ogni bevanda è preparata con cura e servita con un tocco mediterraneo.",
+                    p3: "Per coloro che apprezzano gli spiriti tradizionali, offriamo un'eccellente selezione di <strong>rakija croata</strong> (acquavite) – da loza aromatica (acquavite d'uva) a travarica medicinale (rakija alle erbe) e pelinkovac dolce. Che lo preferiate come aperitivo o digestivo, la nostra selezione di rakija mostra il meglio della tradizione distillatoria croata.",
+                    p4: "Lasciate che il nostro staff vi guidi alla combinazione perfetta – che si tratti di un bicchiere di vino con la vostra pizza, un cocktail rinfrescante sulla nostra terrazza, o un sorso di rakija per completare la vostra esperienza culinaria."
+                },
+                reservations: {
+                    title: "Prenotazioni Durante l'Alta Stagione",
+                    p1: "A causa dell'alta domanda durante l'alta stagione, attualmente non accettiamo nuove prenotazioni. Tuttavia, tutte le prenotazioni precedentemente effettuate saranno onorate.",
+                    p2: "La maggior parte degli ospiti rimane circa 45 minuti, e abbiamo molti tavoli disponibili per accogliere i visitatori senza prenotazione. Per questo motivo, di solito non dovrete aspettare a lungo per essere seduti.",
+                    p3: "Venite presto e godetevi l'esperienza culinaria completa da Pizza Pasta Tudors a Split, dove cibo eccellente e calorosa ospitalità si incontrano!"
+                },
+                reviews: {
+                    title: "Cosa Dicono i Nostri Ospiti",
+                    review1: "\"La migliore pizza a Split. La crosta è perfettamente croccante e gli ingredienti sono freschi. Tudor's Special è un colpo assoluto.\"",
+                    review2: "\"Servizio eccellente, pizza deliziosa e un'atmosfera fantastica. Torneremo sicuramente. Altamente raccomandato.\"",
+                    review3: "\"Finalmente, un posto a Split che padroneggia davvero l'esperienza pizza completa. Veloce, saporito e sempre vale il viaggio.\"",
+                    rating: "basato su 700+ recensioni Google"
+                },
+                location: {
+                    title: "Trova Tudors Velocemente",
+                    subtitle: "Tudors Pizza Pasta",
+                    address: "Indirizzo:",
+                    street: "Spinciceva 7",
+                    city: "21000Split, Croazia",
+                    hours: "Orari di Apertura:",
+                    status: "Attualmente siamo chiusi.",
+                    route: "Scegli il Tuo Percorso",
+                    routeDesc: "Tocca il modo in cui vuoi viaggiare e Google Maps aprirà le indicazioni per Tudors dalla tua posizione attuale.",
+                    car: "🚗 In Auto",
+                    bus: "🚌 In Autobus",
+                    walk: "🚶 A Piedi"
+                },
+                footer: {
+                    copyright: "&copy; 2026 Tudors Pizza. Tutti i diritti riservati.",
+                    address: "Spinciceva 7,21000 Split, Croazia"
+                }
+            },
+            es: {
+                nav: {
+                    home: "Inicio",
+                    menu: "Menú",
+                    reservations: "Reservas",
+                    location: "Ubicación"
+                },
+                hero: {
+                    title: "Pizza y Pasta Dignas de Reyes.",
+                    subtitle: "Masa hecha a mano, ingredientes frescos y una cálida atmósfera de Split que hace que cada parada en Tudors sea la correcta."
+                },
+                about: {
+                    title: "Sobre Pizza Pasta Tudors",
+                    subtitle: "Tradición y Pasión en Cada Bocado",
+                    p1: "<strong>Pizza & Pasta Tudors</strong>, ubicado en la vibrante área de Firule de Split, te trae una experiencia culinaria italiana auténtica con un sello croata. Nuestro restaurante en Split se enorgullece de preparar tanto pizza premium como pasta deliciosa según recetas tradicionales, utilizando solo los ingredientes más frescos y harina de alta calidad.",
+                    p2: "Nuestros hábiles <strong>pizzaioli</strong> estiran con cuidado la masa a mano y hornean cada pizza a altas temperaturas de <strong>420°C</strong> para un crujido dorado perfecto, mientras que nuestros chefs de pasta preparan platos ricos y sabrosos diariamente utilizando técnicas italianas clásicas. Ya sea que anheles una pizza italiana clásica o una fettuccine rica y cremosa, Tudors es tu elección para la <strong>mejor comida italiana en Split</strong>.",
+                    p3: "Las especialidades de la casa incluyen <strong>Pizza Especial de Tudors</strong> con trufas aromáticas y prosciutto dalmata, y nuestra famosa pasta cremosa con hierbas mediterráneas y toppings premium. ¡Visítanos y descubre por qué somos la pizzería y restaurante de pasta favoritos en Split entre los amantes de la comida!"
+                },
+                gallery: {
+                    title: "Nuestra Atmósfera"
+                },
+                drinks: {
+                    title: "Vinos, Cócteles y Rakija",
+                    subtitle: "Bebidas Artesanales para Cada Gusto",
+                    p1: "En <strong>Pizza & Pasta Tudors</strong>, creemos que la comida excepcional merece bebidas excepcionales. Nuestra selección cuidadosamente curada presenta vinos premium <strong>croatas</strong> de renombrados viñedos dalmatas, incluyendo rojos robustos como Plavac Mali y blancos crujientes como Pošip y Grk que complementan perfectamente nuestras especialidades italianas.",
+                    p2: "Nuestros camareros sirven una <strong>selección curada de cócteles</strong> y bebidas premium, perfectamente elaborados para complementar tu comida. Desde un refrescante <strong>Aperol Spritz</strong> hasta una amplia gama de licores de primera calidad, cada bebida se prepara con cuidado y se sirve con un toque mediterráneo.",
+                    p3: "Para aquellos que aprecian los espíritus tradicionales, ofrecemos una excelente selección de <strong>rakija croata</strong> (aguardiente) – desde loza aromática (aguardiente de uva) hasta travarica medicinal (rakija de hierbas) y pelinkovac dulce. Ya sea que lo prefieras como aperitivo o digestivo, nuestra selección de rakija muestra lo mejor de la tradición destiladora croata.",
+                    p4: "Deja que nuestro personal te guíe a la combinación perfecta – ya sea un vaso de vino con tu pizza, un cóctel refrescante en nuestra terraza, o un trago de rakija para completar tu experiencia culinaria."
+                },
+                reservations: {
+                    title: "Reservas Durante la Temporada Alta",
+                    p1: "Debido a la alta demanda durante la temporada alta, actualmente no aceptamos nuevas reservas. Sin embargo, todas las reservas previamente realizadas serán honradas.",
+                    p2: "La mayoría de los huéspedes se quedan alrededor de 45 minutos, y tenemos muchas mesas disponibles para dar la bienvenida a los visitantes sin reserva. Por esto, usualmente no tendrás que esperar mucho para ser sentado.",
+                    p3: "¡Ven temprano y disfruta la experiencia culinaria completa en Pizza Pasta Tudors en Split, donde la gran comida y la cálida hospitalidad se encuentran!"
+                },
+                reviews: {
+                    title: "Qué Dicen Nuestros Huéspedes",
+                    review1: "\"La mejor pizza en Split. La corteza es perfectamente crujiente y los ingredientes frescos. Tudor's Special es un golpe absoluto.\"",
+                    review2: "\"Excelente servicio, pizza deliciosa y una gran atmósfera. Definitivamente regresaremos. Altamente recomendado.\"",
+                    review3: "\"Finalmente, un lugar en Split que realmente domina la experiencia completa de pizza. Rápido, sabroso y siempre vale el viaje.\"",
+                    rating: "basado en 700+ reseñas de Google"
+                },
+                location: {
+                    title: "Encuentra Tudors Rápidamente",
+                    subtitle: "Tudors Pizza Pasta",
+                    address: "Dirección:",
+                    street: "Spinciceva 7",
+                    city: "21000Split, Croacia",
+                    hours: "Horarios de Apertura:",
+                    status: "Actualmente estamos cerrados.",
+                    route: "Elige Tu Ruta",
+                    routeDesc: "Toca la forma en que quieres viajar y Google Maps abrirá direcciones a Tudors desde tu ubicación actual.",
+                    car: "🚗 En Auto",
+                    bus: "🚌 En Autobús",
+                    walk: "🚶 Caminando"
+                },
+                footer: {
+                    copyright: "&copy; 2026 Tudors Pizza. Todos los derechos reservados.",
+                    address: "Spinciceva 7,21000 Split, Croacia"
+                }
+            },
+            fr: {
+                nav: {
+                    home: "Accueil",
+                    menu: "Menu",
+                    reservations: "Réservations",
+                    location: "Emplacement"
+                },
+                hero: {
+                    title: "Pizza et Pâtes Dignes des Rois.",
+                    subtitle: "Pâte faite à la main, ingrédients frais et une atmosphère chaleureuse de Split qui rend chaque arrêt chez Tudors le bon choix."
+                },
+                about: {
+                    title: "À Propos de Pizza Pasta Tudors",
+                    subtitle: "Tradition et Passion dans Chaque Bouchée",
+                    p1: "<strong>Pizza & Pasta Tudors</strong>, situé dans la vibrante zone de Firule de Split, vous apporte une expérience culinaire italienne authentique avec une touche croate. Notre restaurant à Split est fier de préparer à la fois pizza premium et pâtes délicieuses selon des recettes traditionnelles, utilisant uniquement les ingrédients les plus frais et de la farine de haute qualité.",
+                    p2: "Nos habiles <strong>pizzaioli</strong> étirent soigneusement la pâte à la main et cuisent chaque pizza à des températures élevées de <strong>420°C</strong> pour un croustillant doré parfait, tandis que nos chefs de pâtes préparent des plats riches et savoureux quotidiennement en utilisant des techniques italiennes classiques. Que vous ayez envie d'une pizza italienne classique ou d'une fettuccine riche et crémeuse, Tudors est votre choix pour la <strong>meilleure nourriture italienne à Split</strong>.",
+                    p3: "Les spécialités de la maison incluent <strong>Pizza Spéciale de Tudors</strong> avec des truffes aromatiques et du prosciutto dalmate, et nos fameuses pâtes crémeuses avec des herbes méditerranéennes et des garnitures premium. Visitez-nous et découvrez pourquoi nous sommes la pizzeria et le restaurant de pâtes préférés à Split parmi les amateurs de nourriture !"
+                },
+                gallery: {
+                    title: "Notre Atmosphère"
+                },
+                drinks: {
+                    title: "Vins, Cocktails et Rakija",
+                    subtitle: "Boissons Artisanales pour Chaque Goût",
+                    p1: "Chez <strong>Pizza & Pasta Tudors</strong>, nous croyons que la nourriture exceptionnelle mérite des boissons exceptionnelles. Notre sélection soigneusement élaborée présente des vins premium <strong>croates</strong> de vignobles dalmates renommés, y compris des rouges robustes comme Plavac Mali et des blancs croquants comme Pošip et Grk qui complètent parfaitement nos spécialités italiennes.",
+                    p2: "Nos barmans servent une <strong>sélection élaborée de cocktails</strong> et de boissons premium, parfaitement préparés pour accompagner votre repas. D'un rafraîchissant <strong>Aperol Spritz</strong> à une large gamme d'alcools haut de gamme, chaque boisson est préparée avec soin et servie avec une touche méditerranéenne.",
+                    p3: "Pour ceux qui apprécient les spiritueux traditionnels, nous offrons une excellente sélection de <strong>rakija croate</strong> (eau-de-vie) – de loza aromatique (eau-de-vie de raisin) à travarica médicinale (rakija aux herbes) et pelinkovac sucré. Que vous le préfériez comme apéritif ou digestif, notre sélection de rakija montre le meilleur de la tradition de distillation croate.",
+                    p4: "Laissez notre personnel vous guider vers l'accord parfait – qu'il s'agisse d'un verre de vin avec votre pizza, d'un cocktail rafraîchissant sur notre terrasse, ou d'une gorgée de rakija pour compléter votre expérience culinaire."
+                },
+                reservations: {
+                    title: "Réservations Pendant la Haute Saison",
+                    p1: "En raison de la forte demande pendant la haute saison, nous n'acceptons actuellement pas de nouvelles réservations. Cependant, toutes les réservations précédemment effectuées seront honorées.",
+                    p2: "La plupart des invités restent environ 45 minutes, et nous avons beaucoup de tables disponibles pour accueillir les visiteurs sans réservation. Pour cette raison, vous n'aurez généralement pas à attendre longtemps pour être assis.",
+                    p3: "Venez tôt et profitez de l'expérience culinaire complète chez Pizza Pasta Tudors à Split, où une excellente nourriture et une hospitalité chaleureuse se rencontrent !"
+                },
+                reviews: {
+                    title: "Ce Que Disent Nos Invités",
+                    review1: "\"La meilleure pizza à Split. La croûte est parfaitement croustillante et les ingrédients frais. Tudor's Special est un coup absolu.\"",
+                    review2: "\"Excellent service, pizza délicieuse et une grande atmosphère. Nous reviendrons certainement. Hautement recommandé.\"",
+                    review3: "\"Enfin, un endroit à Split qui maîtrise vraiment l'expérience pizza complète. Rapide, savoureux et toujours vaut le voyage.\"",
+                    rating: "basé sur 700+ avis Google"
+                },
+                location: {
+                    title: "Trouvez Tudors Rapidement",
+                    subtitle: "Tudors Pizza Pasta",
+                    address: "Adresse :",
+                    street: "Spinciceva 7",
+                    city: "21000Split, Croatie",
+                    hours: "Heures d'Ouverture :",
+                    status: "Nous sommes actuellement fermés.",
+                    route: "Choisissez Votre Itinéraire",
+                    routeDesc: "Appuyez sur le moyen de transport souhaité et Google Maps ouvrira les directions vers Tudors depuis votre emplacement actuel.",
+                    car: "🚗 En Voiture",
+                    bus: "🚌 En Bus",
+                    walk: "🚶 À Pied"
+                },
+                footer: {
+                    copyright: "&copy; 2026 Tudors Pizza. Tous droits réservés.",
+                    address: "Spinciceva 7,21000 Split, Croatie"
+                }
+            }
+        };
+
+        // Current language
+        let currentLang = localStorage.getItem('tudors-lang') || 'en';
+
+        // Function to set language
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('tudors-lang', lang);
+            updatePageContent();
+            updateDropdown();
+        }
+
+        // Function to update page content
+        function updatePageContent() {
+            const t = translations[currentLang];
+
+            // Nav
+            document.querySelector('.nav-links a[href="#top"]').textContent = t.nav.home;
+            document.querySelector('.nav-links a[href="#reservations"]').textContent = t.nav.reservations;
+            document.querySelector('.nav-links a[href="#location"]').textContent = t.nav.location;
+
+            // Hero
+            document.querySelector('.hero h1').textContent = t.hero.title;
+            document.querySelector('.hero p').textContent = t.hero.subtitle;
+
+            // About
+            document.querySelector('.about .section-title').textContent = t.about.title;
+            document.querySelector('.about h3').textContent = t.about.subtitle;
+            const aboutPs = document.querySelectorAll('.about-content p');
+            aboutPs[0].innerHTML = t.about.p1;
+            aboutPs[1].innerHTML = t.about.p2;
+            aboutPs[2].innerHTML = t.about.p3;
+
+            // Gallery
+            document.querySelector('.gallery .section-title').textContent = t.gallery.title;
+
+            // Drinks
+            document.querySelector('.drinks .section-title').textContent = t.drinks.title;
+            document.querySelector('.drinks h3').textContent = t.drinks.subtitle;
+            const drinksPs = document.querySelectorAll('.drinks-content p');
+            drinksPs[0].innerHTML = t.drinks.p1;
+            drinksPs[1].innerHTML = t.drinks.p2;
+            drinksPs[2].innerHTML = t.drinks.p3;
+            drinksPs[3].innerHTML = t.drinks.p4;
+
+            // Reservations
+            document.querySelector('.reservations .section-title').textContent = t.reservations.title;
+            const resPs = document.querySelectorAll('.reservations-copy p');
+            resPs[0].textContent = t.reservations.p1;
+            resPs[1].textContent = t.reservations.p2;
+            resPs[2].textContent = t.reservations.p3;
+
+            // Reviews
+            document.querySelector('.reviews .section-title').textContent = t.reviews.title;
+            const reviewPs = document.querySelectorAll('.review-card p');
+            reviewPs[0].textContent = t.reviews.review1;
+            reviewPs[1].textContent = t.reviews.review2;
+            reviewPs[2].textContent = t.reviews.review3;
+            document.querySelector('.rating-text').textContent = t.reviews.rating;
+
+            // Location
+            document.querySelector('.location .section-title').textContent = t.location.title;
+            document.querySelector('.location h3').textContent = t.location.subtitle;
+            document.querySelector('.address').innerHTML = `<p><strong>${t.location.address}</strong><br>${t.location.street}<br>${t.location.city}</p>`;
+            document.querySelector('.status-card p:first-child').innerHTML = `<strong>${t.location.hours}</strong>`;
+            document.querySelector('.status-card p:last-child').textContent = t.location.status;
+            document.querySelector('.travel-links h4').textContent = t.location.route;
+            document.querySelector('.travel-links p').textContent = t.location.routeDesc;
+            const travelAs = document.querySelectorAll('.travel-options a');
+            travelAs[0].textContent = t.location.car;
+            travelAs[1].textContent = t.location.bus;
+            travelAs[2].textContent = t.location.walk;
+
+            // Footer
+            const footerPs = document.querySelectorAll('footer p');
+            footerPs[0].innerHTML = t.footer.copyright;
+            footerPs[1].textContent = t.footer.address;
+        }
+
+        // Function to update dropdown
+        function updateDropdown() {
+            const dropdown = document.getElementById('languageDropdown');
+            dropdown.innerHTML = '';
+
+            if (currentLang === 'en') {
+                // Show other languages
+                const langs = [
+                    { code: 'hr', name: 'Hrvatski' },
+                    { code: 'de', name: 'Deutsch' },
+                    { code: 'it', name: 'Italiano' },
+                    { code: 'es', name: 'Español' },
+                    { code: 'fr', name: 'Français' }
+                ];
+                langs.forEach(lang => {
+                    const a = document.createElement('a');
+                    a.href = '#';
+                    a.textContent = lang.name;
+                    a.setAttribute('data-lang', lang.code);
+                    dropdown.appendChild(a);
+                });
+            } else {
+                // Show English first, then others
+                const aEn = document.createElement('a');
+                aEn.href = '#';
+                aEn.textContent = 'English';
+                aEn.setAttribute('data-lang', 'en');
+                dropdown.appendChild(aEn);
+
+                const otherLangs = [
+                    { code: 'hr', name: 'Hrvatski' },
+                    { code: 'de', name: 'Deutsch' },
+                    { code: 'it', name: 'Italiano' },
+                    { code: 'es', name: 'Español' },
+                    { code: 'fr', name: 'Français' }
+                ].filter(lang => lang.code !== currentLang);
+
+                otherLangs.forEach(lang => {
+                    const a = document.createElement('a');
+                    a.href = '#';
+                    a.textContent = lang.name;
+                    a.setAttribute('data-lang', lang.code);
+                    dropdown.appendChild(a);
+                });
+            }
+        }
+
+        // Event listeners
+        document.getElementById('translateBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdown = document.getElementById('languageDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.getElementById('languageDropdown').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                const lang = e.target.getAttribute('data-lang');
+                setLanguage(lang);
+                document.getElementById('languageDropdown').style.display = 'none';
+            }
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const btn = document.getElementById('translateBtn');
+            const dropdown = document.getElementById('languageDropdown');
+            if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        // Initialize
+        setLanguage(currentLang);
+    </script>
+</body>
+</html>
