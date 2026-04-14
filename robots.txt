@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tudors.pizza/sitemap.xml
+Host: www.tudors.pizza
